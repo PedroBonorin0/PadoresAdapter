@@ -21,6 +21,9 @@ public class TimerAdapter extends TimerFortyFive{
     if(timerNinety.getTimer() > 45) {
       this.etapa = "Segunda";
       this.setTime(timerNinety.getTimer() - 45);
+    } else {
+      this.etapa = "Primeira";
+      this.setTime(timerNinety.getTimer());
     }
   }
 }
